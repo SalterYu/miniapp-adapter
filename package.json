@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "main": "lib/index.js",
   "license": "MIT",
+  "homepage": "https://github.com/landn172/miniapp-adapter",
+  "author": {
+    "name": "landn172",
+    "email": "landn172@gmail.com"
+  },
+  "files": ["lib", "README.md"],
   "scripts": {
     "build": "babel src/ --out-dir lib/ --source-maps inline",
     "test": "jest"
