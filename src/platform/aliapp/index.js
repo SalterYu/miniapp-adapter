@@ -1,5 +1,11 @@
-console.log('invoke aliapp')
+import { ProxyInvokePlatformApi, Extend } from "../../utils/index";
+import * as NetWork from "./network";
+console.log("invoke aliapp");
+const wx = {};
+const _my = typeof my !== "undefined" && my;
+if (_my) {
+  Extend(wx, _my);
+}
+Extend(wx, NetWork);
 
-export default typeof my !== 'undefined' && my
-
-export * from './network'
+export default ProxyInvokePlatformApi(wx);
