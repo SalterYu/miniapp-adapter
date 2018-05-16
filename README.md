@@ -6,6 +6,7 @@
 * 微信小程序(wechat) [default]
 * 支付宝小程序(aliapp) [TODO]
 * 百度小程序(baidu) [TODO]
+* html(h5) [TODO]
 
 ## INSTALL
 
@@ -24,7 +25,7 @@ const requireAdapter = require('miniapp-adapter').default
 module.exports = {
   resolve: {
     alias: {
-      wx: requireAdapter('wechat') // aliapp
+      wx: requireAdapter('wechat') // aliapp | baidu | h5
     }
   }
 }

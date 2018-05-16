@@ -14,6 +14,9 @@ if (typeof Proxy !== "undefined") {
         return () => {
           console.warn(`invoke wx.${key}, but not achieve function`);
         };
+      },
+      set(target, key, value) {
+        _wx[key] = value;
       }
     }
   );
