@@ -1,12 +1,12 @@
 import { ProxyInvokePlatformApi, Extend } from "../../utils/index";
 
-const wx = {};
+const api = {};
 const _swan = typeof swan !== "undefined" && swan;
 
 if (_swan) {
-  Extend(wx, _swan);
+  Extend(api, _swan);
 }
 
 console.log('invoke baidu')
 
-export default ProxyInvokePlatformApi(wx)
+export default ProxyInvokePlatformApi(api)

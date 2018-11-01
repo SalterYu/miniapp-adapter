@@ -1,5 +1,5 @@
 import { ProxyInvokePlatformApi } from "../../utils/index";
 console.log("invoke h5");
-const wx = {};
+const api = {};
 
-export default ProxyInvokePlatformApi(wx);
+export default ProxyInvokePlatformApi(api);

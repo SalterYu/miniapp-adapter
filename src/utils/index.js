@@ -1,11 +1,11 @@
-export function ProxyInvokePlatformApi(wx) {
+export function ProxyInvokePlatformApi(api) {
   if (typeof Proxy !== "undefined") {
-    const _wx = wx;
-    wx = new Proxy(
+    const _api = api;
+    api = new Proxy(
       {},
       {
         get(target, key, receiver) {
-          if (_wx[key]) return _wx[key];
+          if (_api[key]) return _api[key];
 
           // almost all wx[key] is a function
           return () => {
@@ -13,12 +13,12 @@ export function ProxyInvokePlatformApi(wx) {
           };
         },
         set(target, key, value) {
-          _wx[key] = value;
+          _api[key] = value;
         }
       }
     );
   }
-  return wx;
+  return api;
 }
 
 export function Extend(obj, newObj) {
