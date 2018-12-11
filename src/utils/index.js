@@ -24,3 +24,14 @@ export function ProxyInvokePlatformApi(api) {
 export function Extend(obj, newObj) {
   return Object.assign(obj, newObj);
 }
+
+export function defineProperty(ctx, name, value) {
+  Object.defineProperty(ctx, name, {
+    get() {
+      return value
+    },
+    set(v) {
+      value = v
+    }
+  })
+}

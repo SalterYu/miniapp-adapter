@@ -21,5 +21,8 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-2": "^6.24.1",
     "jest": "^22.4.3"
+  },
+  "dependencies": {
+    "miniapp-regenerator-runtime": "^1.0.0"
   }
 }
