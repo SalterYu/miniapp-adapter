@@ -4,8 +4,8 @@
 适配不同小程序 API
 
 * 微信小程序(wechat) [default]
-* 支付宝小程序(aliapp) [TODO]
-* 百度小程序(baidu) [TODO]
+* 支付宝小程序(aliapp) (支持70%) 
+* 百度小程序(baidu) （支持80%）百度微信基本相同
 * html(h5) [TODO]
 
 ## INSTALL
